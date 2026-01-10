@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    char name[10];
+    char section;
+    int age, class;
+
+    printf("enter you name: \n");
+        scanf("%s",name);
+
+    printf("enter you age: \n");
+        scanf("%d",&age);
+
+    printf("enter you class:\n ");
+        scanf("%d",&class);
+
+    printf("enter you section: \n");
+        scanf(" %c",&section);
+
+    printf("Name: %s \n",name);
+    printf("Age: %d \n",age);
+    printf("Class: %d \n",class);
+    printf("Section: %c \n",section);
+
+    return 0;
+}
