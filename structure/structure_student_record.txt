@@ -8,7 +8,7 @@
  float average_marks;
 };
  int main() {
- struct student one[3 ]; 
+ struct student one[3]; 
  int i,j;
  for(i=0;i<3;i++)
  {
