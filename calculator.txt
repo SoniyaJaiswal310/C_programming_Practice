@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+
+float a,b;
+char operator;
+
+printf("enter a number:\n ");
+scanf("%f", &a);
+printf("enter an operator (+,-,*,/):\n ");
+scanf(" %c", &operator);
+printf("enter a number: \n");
+scanf("%f", &b);
+
+switch(operator){
+    int sum,diff,multiply,div;
+
+    case '+':
+    sum = a+b;
+    printf("%d \n", sum);
+    break;
+
+    case '-':
+    diff = a-b;
+    printf("%d \n", diff);
+    break;
+
+    case '*':
+    multiply = a*b;
+    printf("%d \n", multiply);
+    break;
+
+    case '/':
+    div =a/b;
+    printf("%d \n", div);
+    break;
+
+    default:
+    printf("invalid operator: ");
+}
+
+    return 0;
+
+
+}
