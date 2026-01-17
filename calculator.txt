@@ -31,9 +31,14 @@ switch(operator){
     break;
 
     case '/':
+    if (b!= 0) { 
     div =a/b;
     printf("%d \n", div);
-    break;
+    } 
+else { 
+printf("Error: Division by zero is not allowed.\n"); 
+} 
+break;
 
     default:
     printf("invalid operator: ");
