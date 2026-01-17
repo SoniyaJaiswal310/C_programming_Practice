@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+int a = 10;
+int b = 20;
+int c;
+int *x=&a;
+int *y=&b;
+int *temp=&c;
+*temp = *x;
+*x = *y;
+*y= *temp;
+printf("%d\n",*x);
+printf("%d",*y);
+return 0;
+}
