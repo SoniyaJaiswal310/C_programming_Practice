@@ -1,0 +1,67 @@
+#include<stdio.h>
+int main()
+{
+int i,j,var[10],k,var1[10];
+int a[9][9] = { 
+        {5, 3, 0, 0, 7, 0, 0, 0, 0}, 
+        {6, 0, 0, 1, 9, 5, 0, 0, 0}, 
+        {0, 9, 8, 0, 0, 0, 0, 6, 0}, 
+        {8, 0, 0, 0, 6, 0, 0, 0, 3}, 
+        {4, 0, 0, 8, 0, 3, 0, 0, 1}, 
+        {7, 0, 0, 0, 2, 0, 0, 0, 6}, 
+        {0, 6, 0, 0, 0, 0, 2, 8, 0}, 
+        {0, 0, 0, 4, 1, 9, 0, 0, 5}, 
+        {0, 0, 0, 0, 8, 0, 0, 7, 9} 
+    };
+
+    for(i=0;i<9;i++){
+        int var[10]={0};
+        for (j=0;j<9;j++){
+            if(var[a[i][j]]!=1){
+                var[a[i][j]]=1;
+            }
+            else{
+                printf("\n repeated");
+                return 0;
+                
+            } 
+        }
+    }
+        for (j=0;j<9;j++){
+            int var[10]={0};
+        for(i=0;i<9;i++){
+            if(var[a[i][j]]!=1){
+                var[a[i][j]]=1;
+
+            }
+            else{
+                printf(" \n repeated");
+                return 0;
+        }
+    }
+        }
+        for(k=0;k<9;k++){
+            int var1[10]={0};
+            for(i=((k/3)*3);i<(((k/3)*3)+3);i++){
+            for(j=((k%3)*3);j<(((k%3)*3)+3);j++){
+                if(var1[a[i][j]]!=1){
+                var1[a[i][j]]=1;
+
+                }
+                else {
+                    printf(" \n repeted");
+                    return 0;
+                }
+            }
+        }
+    }
+    printf("Valid Sudoku:\n\n");
+    for (i = 0; i < 9; i++) {
+        for (j = 0; j < 9; j++) {
+            printf("%d \t", a[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+

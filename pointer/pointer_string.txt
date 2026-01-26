@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+char a[6] = "hello";
+char *ptr = a;
+while(*ptr !='\0')
+{
+    printf("%c", *ptr);
+    ptr++;
+}
+return 0;
+}
+
+
+

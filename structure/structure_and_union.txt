@@ -1,0 +1,14 @@
+#include<stdio.h>
+struct employee{
+    union emp{
+        int age;
+    }em;
+};
+int main(){
+    struct employee e1;
+    printf("enter your age:");
+    scanf("%d", &e1.em.age);
+    printf("%d", e1.em.age);
+return 0;
+}
+
