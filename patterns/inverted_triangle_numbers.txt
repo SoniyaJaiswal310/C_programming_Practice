@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int n_row,i,j;
+
+    printf("enter the number of rows: ");
+    scanf("%d", &n_row);
+
+     int n_element[20];
+    int elements[n_row][20];
+
+    for(i=0;i<n_row;i++)
+    {
+    printf("enter the no of elements in the row: ");
+    scanf("%d", &n_element[i]);
+
+    printf("enter the elements of the row: ");
+    for(j=0;j<n_element[i];j++)
+    {
+        scanf("%d", &elements[i][j]);
+    }
+    }
+
+    for(i=0;i<n_row;i++)
+    {
+    for(j=0;j<i;j++)
+    {
+        printf("\t");
+    }
+    for(j=0;j<n_element[i];j++)
+    {
+    printf("%d \t",elements[i][j]);
+    }
+    printf("\n");
+}     
+return 0;
+}
